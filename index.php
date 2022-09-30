@@ -2,6 +2,7 @@
 
   <!--main-->
     <main class="top">
+      
       <div class="shutter"></div>
       <section class="container">
         <div class="content">
