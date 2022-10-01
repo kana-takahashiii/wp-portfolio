@@ -21,18 +21,18 @@
 
         <div class="mock job js-demo">
           <p>MY JOB</p>
-          <?php the_field('my_job'); ?>
+          <p><?php the_field('my_job'); ?></p>
           <!-- <p>デザイン（Figma）・コーディング</p> -->
         </div>
 
         <div class="mock dt js-demo">
           <p>DETAIL</p>
-          <?php the_field('detail'); ?>
+          <p><?php the_field('detail'); ?></p>
         </div>
 
         <div class="mock link js-demo">
           <p>URL</p>
-          <a href="<?php the_field('url'); ?>" target="_blank" rel="noopener noreferrer">Fruits Gelateria</a>
+          <p><a href="<?php the_field('url'); ?>" target="_blank" rel="noopener noreferrer"></a></p>
         </div>
         <div class="bg-br-mock js-demo"></div>
       </div>
