@@ -48,10 +48,8 @@
                 <div class="swiper-wrapper">
                   <!-- <div class="swiper-slide"> -->
                   <div id="post-<?php the_ID(); ?>" <?php post_class('swiper-slide'); ?>>
-                    <!-- <a href="<?php echo get_template_directory_uri(); ?>/works/"><img src="<?php echo get_template_directory_uri(); ?>/img/worksimg/gm-mock.png" alt="ジェラートリアマコ"> -->
                     <a href="<?php the_permalink(); ?>">
-                      <img src="<?php the_permalink(); ?>">
-                        <?php the_post_thumbnail(''); ?>
+                        <?php the_post_thumbnail('medium'); ?>
                     </a>
                   </div>
 
