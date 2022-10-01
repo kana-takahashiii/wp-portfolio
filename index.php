@@ -2,7 +2,7 @@
 
   <!--main-->
     <main class="top">
-      
+
       <div class="shutter"></div>
       <section class="container">
         <div class="content">
@@ -33,22 +33,35 @@
           </div>
         </div>
       </section>
+
+
+
       <!-- WORKS-->
       <div class="section-wrap js-trigger" id="works">
         <h2 class="js-span">WORKS</h2>
-        <div class="section-item">
-          <div class="swiper slider-works js-slider-works">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><a href="<?php echo get_template_directory_uri(); ?>/works/"><img src="<?php echo get_template_directory_uri(); ?>/img/worksimg/gm-mock.png" alt="ジェラートリアマコ"></a></div>
-              <div class="swiper-slide"><a href="<?php echo get_template_directory_uri(); ?>/works2/"> <img src="<?php echo get_template_directory_uri(); ?>/img/worksimg/iv-mock.png" alt="インボイス"></a></div>
-              <div class="swiper-slide"><a href="#" target="_blank"> <img src="<?php echo get_template_directory_uri(); ?>/img/COMINGSOON.png" alt="COMINGSOON"></a></div>
+        <!-- worksループ記事記述 -->
+        <?php if( have_posts() ); ?>
+          <?php while (have_posts() ): the_post(); ?>
+            <div class="section-item">
+              <div class="swiper slider-works js-slider-works">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a href="<?php echo get_template_directory_uri(); ?>/works/"><img src="<?php echo get_template_directory_uri(); ?>/img/worksimg/gm-mock.png" alt="ジェラートリアマコ"></a></div>
+                  <!-- 2件分記述削除予定 -->
+                  <!-- <div class="swiper-slide"><a href="<?php echo get_template_directory_uri(); ?>/works2/"> <img src="<?php echo get_template_directory_uri(); ?>/img/worksimg/iv-mock.png" alt="インボイス"></a></div>
+                  <div class="swiper-slide"><a href="#" target="_blank"> <img src="<?php echo get_template_directory_uri(); ?>/img/COMINGSOON.png" alt="COMINGSOON"></a></div> -->
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
+          <?php endwhile; ?>
+        <?php endif; ?>
+
         <!--背景-->
         <div class="bg-br"></div>
       </div>
+
+
+
       <!-- ABOUT-->
       <div class="section-wrap js-trigger" id="about">
         <h2 class="text-center js-span">ABOUT</h2>
@@ -81,6 +94,10 @@
           <div class="btn"><a href="<?php echo get_template_directory_uri(); ?>/about/"><span class="btn-text">MORE</span></a></div>
         </div>
       </div>
+
+
+
+      
       <!--CONTACT-->
       <div class="section-wrap js-trigger" id="contact">
         <h2 class="js-span">CONTACT</h2>
