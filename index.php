@@ -50,13 +50,19 @@
                   <div id="post-<?php the_ID(); ?>" <?php post_class('swiper-slide'); ?>>
                     <!-- <a href="<?php echo get_template_directory_uri(); ?>/works/"><img src="<?php echo get_template_directory_uri(); ?>/img/worksimg/gm-mock.png" alt="ジェラートリアマコ"> -->
                     <a href="<?php the_permalink(); ?>">
-                      <img src="<?php echo get_template_directory_uri(); ?>/img/worksimg/gm-mock.png" alt="ジェラートリアマコ">
+                      <img src="<?php the_permalink(); ?>">
+                        <?php the_post_thumbnail(''); ?>
                     </a>
                   </div>
 
                   <!-- 2件分記述削除予定 -->
-                  <!-- <div class="swiper-slide"><a href="<?php echo get_template_directory_uri(); ?>/works2/"> <img src="<?php echo get_template_directory_uri(); ?>/img/worksimg/iv-mock.png" alt="インボイス"></a></div>
-                  <div class="swiper-slide"><a href="#" target="_blank"> <img src="<?php echo get_template_directory_uri(); ?>/img/COMINGSOON.png" alt="COMINGSOON"></a></div> -->
+                  <!-- <div class="swiper-slide"><a href="<?php echo get_template_directory_uri(); ?>/works2/">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/worksimg/iv-mock.png" alt="インボイス"></a>
+                  </div>
+                  <div class="swiper-slide"><a href="#" target="_blank">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/COMINGSOON.png" alt="COMINGSOON"></a>
+                  </div> -->
+                  
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
