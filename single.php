@@ -32,7 +32,7 @@
 
         <div class="mock link js-demo">
           <p>URL</p>
-          <p><a href="<?php the_field('url'); ?>" target="_blank" rel="noopener noreferrer"></a></p>
+          <a href="<?php the_field('url'); ?>" target="_blank" rel="noopener noreferrer"><?php the_field('url2'); ?></a>
         </div>
         <div class="bg-br-mock js-demo"></div>
       </div>
