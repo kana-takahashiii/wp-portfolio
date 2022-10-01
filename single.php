@@ -10,15 +10,24 @@
       <h3><?php the_title(); ?></h3>
       <!-- <h3>DETAILS OF<br>Fruits Gelateria</h3> -->
     </div>
-    <div class="mock-wrap"><img class="js-demo" src="../img/worksimg/gm-mock.png" alt="">
+
+    <div class="mock-wrap">
+      <?php
+      $pic = get_field('pic');
+      $pic_url = $pic['sizes']['large'];
+      ?>
+      <img class="js-demo" src="<?php echo $pic_url;?>" alt="">
+      <!-- <img class="js-demo" src="../img/worksimg/gm-mock.png" alt=""> -->
       <div class="mock job js-demo">
         <p>MY JOB</p>
         <p>デザイン（Figma）・コーディング</p>
       </div>
+
       <div class="mock dt js-demo">
         <p>DETAIL</p>
         <p> 架空のジェラートショップをデザインからコーディングまで行いました。トンマナを意識し、学生〜20代前半の女性層をターゲット層に絞り、全体的に可愛らしい雰囲気で仕上げました。</p>
       </div>
+
       <div class="mock link js-demo">
         <p>URL</p><a href="https://fruits-gelateria.netlify.app" target="_blank" rel="noopener noreferrer">Fruits Gelateria</a>
       </div>
