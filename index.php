@@ -40,12 +40,18 @@
       <div class="section-wrap js-trigger" id="works">
         <h2 class="js-span">WORKS</h2>
         <!-- worksループ記事記述 -->
-        <?php if( have_posts() ); ?>
+        <?php if( have_posts() ): ?>
           <?php while (have_posts() ): the_post(); ?>
+
             <div class="section-item">
               <div class="swiper slider-works js-slider-works">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><a href="<?php echo get_template_directory_uri(); ?>/works/"><img src="<?php echo get_template_directory_uri(); ?>/img/worksimg/gm-mock.png" alt="ジェラートリアマコ"></a></div>
+                  <!-- <div class="swiper-slide"> -->
+                  <div id="post-<?php the_ID(); ?>" <?php post_class('swiper-slide'); ?>>
+                    <a href="<?php echo get_template_directory_uri(); ?>/works/"><img src="<?php echo get_template_directory_uri(); ?>/img/worksimg/gm-mock.png" alt="ジェラートリアマコ">
+                    </a>
+                  </div>
+
                   <!-- 2件分記述削除予定 -->
                   <!-- <div class="swiper-slide"><a href="<?php echo get_template_directory_uri(); ?>/works2/"> <img src="<?php echo get_template_directory_uri(); ?>/img/worksimg/iv-mock.png" alt="インボイス"></a></div>
                   <div class="swiper-slide"><a href="#" target="_blank"> <img src="<?php echo get_template_directory_uri(); ?>/img/COMINGSOON.png" alt="COMINGSOON"></a></div> -->
