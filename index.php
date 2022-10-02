@@ -38,29 +38,32 @@
 
       <!-- WORKS-->
       <?php if( have_posts() ): ?>
-      <div class="section-wrap js-trigger" id="works">
-        <h2 class="js-span">WORKS</h2>
-        <!-- worksループ記事記述 -->
-          <?php while (have_posts() ): the_post(); ?>
-            <div class="section-item">
-              <div class="swiper slider-works js-slider-works">
-                <div class="swiper-wrapper">
-                  <!-- <div class="swiper-slide"> -->
-                  <div id="post-<?php the_ID(); ?>" <?php post_class('swiper-slide'); ?>>
-                    <a href="<?php the_permalink(); ?>">
-                        <?php the_post_thumbnail('medium'); ?>
-                    </a>
+        <div class="section-wrap js-trigger" id="works">
+          <h2 class="js-span">WORKS</h2>
+          <div class="section-item">
+            <div class="swiper slider-works js-slider-works">
+              <div class="swiper-wrapper">
+                <!-- worksループ記事記述 -->
+                <?php while (have_posts() ): the_post(); ?>
+                    <div id="post-<?php the_ID(); ?>" <?php post_class('swiper-slide'); ?>>
+                      <a href="<?php the_permalink(); ?>">
+                          <?php 
+                          $image = get_field('img');
+                          if( !empty( $image ) ): ?>
+                              <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                          <?php endif; ?>
+                      </a>
+                    </div>
+                <?php endwhile; ?>
                   </div>
+                  <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
               </div>
+              <!--背景-->
+              <div class="bg-br"></div>
             </div>
-          <?php endwhile; ?>
-        <?php endif; ?>
-
-        <!--背景-->
-        <div class="bg-br"></div>
-      </div>
+      <?php endif; ?>
+    
 
 
 
