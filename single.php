@@ -20,7 +20,7 @@
         <?php endif; ?>
 
         <div class="mock job js-demo">
-          <p>MY JOB!!</p>
+          <p>MY JOB</p>
           <p><?php the_field('my_job'); ?></p>
           <!-- <p>デザイン（Figma）・コーディング</p> -->
         </div>
