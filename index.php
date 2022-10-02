@@ -37,12 +37,11 @@
 
 
       <!-- WORKS-->
+      <?php if( have_posts() ): ?>
       <div class="section-wrap js-trigger" id="works">
         <h2 class="js-span">WORKS</h2>
         <!-- worksループ記事記述 -->
-        <?php if( have_posts() ): ?>
           <?php while (have_posts() ): the_post(); ?>
-
             <div class="section-item">
               <div class="swiper slider-works js-slider-works">
                 <div class="swiper-wrapper">
@@ -52,15 +51,6 @@
                         <?php the_post_thumbnail('medium'); ?>
                     </a>
                   </div>
-
-                  <!-- 2件分記述削除予定 -->
-                  <!-- <div class="swiper-slide"><a href="<?php echo get_template_directory_uri(); ?>/works2/">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/worksimg/iv-mock.png" alt="インボイス"></a>
-                  </div>
-                  <div class="swiper-slide"><a href="#" target="_blank">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/COMINGSOON.png" alt="COMINGSOON"></a>
-                  </div> -->
-                  
                 </div>
                 <div class="swiper-pagination"></div>
               </div>
