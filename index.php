@@ -61,6 +61,7 @@
               </div>
               <!--背景-->
               <div class="bg-br"></div>
+          </div>
         </div>
       <?php endif; ?>
     
