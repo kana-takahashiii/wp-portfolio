@@ -1,5 +1,6 @@
 .contact {
-    @include flex;
+    display: flex;
+    -js-display: flex;
     align-items: center;
     justify-content: center;
     margin: 30px auto;
