@@ -4,25 +4,15 @@
   <?php while (have_posts() ): the_post(); ?>
     <main class="about">
       <div class="gp-demo">
-        <!-- <h2>ABOUT<br>ME</h2> -->
-        <h2><?php the_title(); ?></h2>
+      <!-- タイトル -->
+      <h2><?php the_title(); ?></h2>
       </div>
 
       <div class="about-wrap">
         <div class="about-text gp-demo2">
           <div class="text"> 
-            <p>ここまで見てくださり、ありがとうございます。<br>1992年生まれ、神奈川県出身/さいたま市在住。<br>
-              2018年から2022年の10月まで医療業界にいながらプログラミングの学習を開始。<br>
-              私を構成するものといえば・・・コーヒー/スイーツ/読書/フェス/音楽/洋服/女性アイドル/アニメです!
-              最近はサウナを始めました!!水風呂は1分。至福のひとときです。<br>
-              精一杯がんばりますので仲間にいれてくれたら嬉しいです。
-              宜しくお願いします。
-            </p>
-            <p>
-              Born in 1992, born in Kanagawa Prefecture/resident of Saitama City. I started learning programming in the summer of my 4th year in the healthcare industry. The things that make up me are...
-              coffee/sweets/reading/festivals/music/clothing/female idols/simple/anime! Recently I started taking a sauna!
-              The water bath is 1 minute. It is a moment of bliss. I will do my best and would be happy if you could join me. Thank you for your kind attention.
-            </p>
+            <!-- 自己紹介文 -->
+            <?php the_content(); ?>
           </div>
         </div>
         <!-- circle-->
