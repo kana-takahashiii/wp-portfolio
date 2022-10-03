@@ -1,42 +1,5 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <!-- head-->
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>KANA TAKAHASHI</title>
-    <link rel="stylesheet" href="/css/style.css"><meta property="og:title" content="KANA TAKAHASHI Portfolio">
-<meta property="og:description" content="髙橋果奈のポートフォリオサイトです。">
-<meta property=”og:type” content=”website” />
-<meta property="og:url" content="https://www.kana-takahashi.com/">
-<meta property="og:image" content="https://www.kana-takahashi.com/img/OGP-img.png">
-<meta property="og:site_name" content="KANA TAKAHASHI">
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-  </head>
-  <body>
-    <nav class="header-nav-pc">
-      <ul>
-        <li><a href="/#works">WORKS</a></li>
-        <li><a href="/#about">ABOUT</a></li>
-        <li><a href="/#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-    <div id="navArea">
-      <nav class="header-nav">
-        <ul>
-          <li><a href="/#works">WORKS</a></li>
-          <li><a href="/#about">ABOUT</a></li>
-          <li><a href="/#contact">CONTACT</a></li>
-        </ul>
-      </nav>
-      <div class="toggle_btn"><span></span><span> </span><span></span></div>
-      <div id="mask"></div>
-    </div>
-    <div class="cursor"></div>
-    <div class="follower"></div>
-  </body>
-</html>
+<?php get_header(); ?>
+
 <!--about-->
 <main class="about">
   <div class="gp-demo">
@@ -46,7 +9,7 @@
     <div class="about-text gp-demo2">
       <div class="text"> 
         <p>ここまで見てくださり、ありがとうございます。<br>1992年生まれ、神奈川県出身/さいたま市在住。<br>
-          2018年から2022年の10月まで医療業界にいながらプログラミングの学習をしておりました。<br>
+          2018年から2022年の10月まで医療業界にいながらプログラミングの学習を開始。<br>
           私を構成するものといえば・・・コーヒー/スイーツ/読書/フェス/音楽/洋服/女性アイドル/アニメです!
           最近はサウナを始めました!!水風呂は1分。至福のひとときです。<br>
           精一杯がんばりますので仲間にいれてくれたら嬉しいです。
@@ -115,20 +78,13 @@
     <div class="bg-br-about"></div>
   </div>
 </main>
-<!--footer-->
+
+<!--footer inner-->
 <div class="footer-inner">
   <div class="btn"><a href="/"><span class="btn-text">BACK</span>
       <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M20.3536 4.29105C20.5488 4.09579 20.5488 3.77921 20.3536 3.58395L17.1716 0.401966C16.9763 0.206704 16.6597 0.206704 16.4645 0.401966C16.2692 0.597228 16.2692 0.913811 16.4645 1.10907L19.2929 3.9375L16.4645 6.76593C16.2692 6.96119 16.2692 7.27777 16.4645 7.47303C16.6597 7.6683 16.9763 7.6683 17.1716 7.47303L20.3536 4.29105ZM0 4.4375L20 4.4375V3.4375L0 3.4375L0 4.4375Z" fill="#E5E5E5"></path>
       </svg></a></div>
-  <!-- footer.pug-->
-  <footer>
-    <p>&copy; 2022 KANA TAKAHASHI</p>
-    <div class="parapara-jmp"></div>
-  </footer>
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/gsap@3.7.0/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CustomEase.min.js"></script>
-  <script src="/js/main.js"></script>
-</div>
+
+
+<?php get_footer(); ?>
