@@ -1,3 +1,9 @@
+<!-- 自動整形機能を停止する。 -->
+<?php
+if(is_page('contact')) {
+  remove_filter('the_content', 'wpautop' );
+}
+?>
   <?php get_header(); ?>
 
   <!--main-->
@@ -117,11 +123,9 @@
         </div>
         <div class="parapara-jmp"></div>
         <?php echo do_shortcode('[mwform_formkey key="56"]'); ?>
-        <!-- <div class="form"><a href="mailto:kana92105@gmail.com">kana92105@gmail.com</a></div> -->
+      </div>
       </div>
     </main>
-
-
 
 
   <!--footer-->
