@@ -55,6 +55,7 @@
                       </a>
                     </div>
                 <?php endwhile; ?>
+                <div class="swiper-slide"><a href="#" target="_blank"> <img src="../img/COMINGSOON.png" alt="COMINGSOON"></a></div>
               </div>
                   <div class="swiper-pagination"></div>
             </div>
