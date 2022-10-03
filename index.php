@@ -57,7 +57,6 @@
                 <?php endwhile; ?>
               </div>
                   <div class="swiper-pagination"></div>
-              </div>
             </div>
               <!--背景-->
               <div class="bg-br"></div>
