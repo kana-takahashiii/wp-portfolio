@@ -100,7 +100,7 @@
             <div class="swiper-scrollbar"></div>
           </div>
           <!-- btn-->
-          <div class="btn"><a href="<?php echo get_template_directory_uri(); ?>/about/"><span class="btn-text">MORE</span></a></div>
+          <div class="btn"><a href="<?php echo home_url('/aboutme'); ?>"><span class="btn-text">MORE</span></a></div>
         </div>
       </div>
 
