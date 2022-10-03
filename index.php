@@ -116,7 +116,8 @@
           </p>
         </div>
         <div class="parapara-jmp"></div>
-        <div class="form"><a href="mailto:kana92105@gmail.com">kana92105@gmail.com</a></div>
+        <?php echo do_shortcode('[mwform_formkey key="56"]'); ?>
+        <!-- <div class="form"><a href="mailto:kana92105@gmail.com">kana92105@gmail.com</a></div> -->
       </div>
     </main>
 
