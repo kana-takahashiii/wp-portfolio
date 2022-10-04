@@ -10,7 +10,14 @@
         .span-red {
             color: red;
         }
-    }
+        input[type="email"]{
+            width: 50%;
+        }
+        .resize50 {
+            input[type="text"] {
+            width: 50%;
+            }
+        }
     .form_row_center {
     }
 }
@@ -100,5 +107,5 @@ input[type="submit"]:hover {
         padding-top: 100px;
         width: 90vw;
     }
-    
+}
 }
