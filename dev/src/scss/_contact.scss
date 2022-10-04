@@ -12,13 +12,58 @@
         
     }
 }
-
-.btn-send,.btn-back{
-    @include btn(auto,auto);
+input[type="submit"]{
+    font-family: "Noto Sans JP", serif ,sans-serif;
+    // font-size: 1.0em;
+    display: block;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    color:var(--main-color);
+    background-color: var(--btn-color);
+    font-weight: bold;
+    height: 3.0em;
+    line-height: 3.0em;
+    width: 100%;
+    padding: 0 2.5em 0 0.8em;
+    transition: 0.3s;
 }
-// input[type="submit"]{
-//     @include btn(auto,auto);
-// }
+.button_wrap{
+    color: orange;
+    position: relative;
+    line-height: 2.8em;
+    width: 130px;
+    transition: 0.5s;
+    margin:0 auto;
+}
+.button_wrap::after{
+    transition: 0.3s;
+    content: "";
+    width: .6em;
+    height: .6em;
+    border-top: 2px solid var(--main-color);
+    border-right: 2px solid var(--main-color);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.button_wrap:hover::after{
+    right: 12px;
+}
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #f6d365 0%,  #fda085 100%);
+
+}
+
+
+
+
+
 
 
 // 確認画面
