@@ -389,62 +389,11 @@ body {
                     bottom: 0;
                 }
             }
-            // parapa-jumpの位置決め
-            // .parapara-jmp {
-            //     aspect-ratio: 12 / 7;
-            //     width: 91px;
-            //     height: 160px;
-            //     bottom: 0;
-            //     left: -10vw;
-            //     position: absolute;
-            //     background: url(../img/sample.png) no-repeat;
-            //     animation: parapara-jmp 3.0s steps(3) infinite;
-            //     background-size: cover;
-            // }
         }
 
-        // .section-item {
-        //     position: relative;
-        //     .parapara-jmp {
-        //         position: absolute;
-        //         aspect-ratio: 12/7;
-        //         left: -10%;
-        //         // レスポンシブ
-        //         width: clamp(84px,10vw,91px);
-        //         // width: 91px;
-        //         height: 160px;
-        //         bottom:0 ;
-        //         background: url(../img/sample.png) no-repeat;
-        //         -webkit-animation: parapara-jmp 3s steps(3) infinite;
-        //         animation: parapara-jmp 3s steps(3) infinite;
-        //         background-size: cover;
-        //     }
-        // }
     }
 
-            
-
-    // footer-anime
-    // .parapara-flex {
-    //     display: flex;
-    //     position: absolute;
-    // .parapara-top {
-    //     width: 80px;
-    //     height: 120px;
-    //     background: url(../img/parapara.png) no-repeat;
-    //     animation: parapara-top 3.0s steps(2) infinite;
-    //     background-size: cover;
-    // }
-    // }
-    // .btn {
-    //     @include btn(26.5rem, 7.2rem);
-    //     btn-text {
-    //         padding: 0 60px;
-    //     }
-    // }
-    // code-end
-
-
+        
 
 
 
