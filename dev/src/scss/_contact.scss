@@ -8,7 +8,17 @@
             color: red;
         }
     }
+    .form_row_center {
+        
+    }
 }
+
+.btn-send,.btn-back{
+    @include btn(auto,auto);
+}
+// input[type="submit"]{
+//     @include btn(auto,auto);
+// }
 
 
 // 確認画面
@@ -36,9 +46,3 @@
     }
 }
 
-// 送信するボタン
-.form_row_center {
-    .btn-send {
-        @include btn(26.5rem, 7.2rem);
-    }
-}
