@@ -1,7 +1,44 @@
+.contact-thanks {
+
+}
+
 .form {
     .form_row {
         .span-red {
             color: red;
         }
+    }
+}
+
+
+// 確認画面
+.mw_wp_form_confirm {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 200px;
+
+    .form {
+        .form_row {
+            margin-top: 20px;
+            // name
+        }
+    }
+    .form_content {
+        // 入力内容の部分
+        margin-top: 10px;
+    }
+
+    .form_row .form_row_center {
+        // btn
+        margin-top: 40px;
+    }
+}
+
+// 送信するボタン
+.form_row_center {
+    .btn-send {
+        @include btn(26.5rem, 7.2rem);
     }
 }
