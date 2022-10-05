@@ -1,7 +1,13 @@
 <?php get_header(); ?>
+
+
+<h2 class="js-span">CONFIRM</h2>
+
+<div class="contact-confirmation">
     <?php the_content(); ?>
-    
 </div>
+
+
 
 <!-- 戻るボタン -->
 <div class="footer-inner">
