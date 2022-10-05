@@ -204,10 +204,11 @@ targets.forEach( (target) => {
 //ALL__条件分岐
 // -----------------------
 const home = document.querySelector(".shutter"); //TOP
-const form = document.querySelector(".contact-confirmation"); //formページ
 const about = document.querySelector(".about"); //ABOUTページ
 const works = document.querySelector(".works"); //WORKSページ
-if((home) || (form)) {
+// const form = document.querySelector(".contact-confirmation"); //form
+if(home) {
+// if((home) || (form)) {
     // スムーススクロール記述　↓↓
     let smoothHomeAnchor =()=> {
         const anchorLinks = document.querySelectorAll('a[href^="/#"]');
@@ -270,47 +271,53 @@ if((home) || (form)) {
     gsap.set(".js-kv-spn2 span", {opacity: 0,});
     gsap.set(".cir-sd",{opacity: 0,});
     gsap.set(".header-nav-pc", {opacity: 0,});
-
+    
     const targetEl = document.querySelector('.content');
-        targetEl.addEventListener('animationend',() => {
-
+    targetEl.addEventListener('animationend',() => {
+        
         var kv = gsap.timeline();
-            // "kana takahashi"
-            kv.to(".js-kv-spn span",{
-                opacity: 1,
-                duration: 3,
-                stagger: 0.07,
-            })
-
-            // "hi!~~"
-            .to(".js-kv-spn2 span",{
-                opacity:1,
-                duration: 3,
-                stagger: 0.03,
-            }, "<+=0.01")
-
-            // svg img
-            .to(".cir-sd",{
-                opacity:1,
-                duration: 1,
-                ease: "power4.inOut",
-                y: "-20%",
-            },"<+=2")
-
-            // parapara img
-            .to(".parapara-top",{
-                opacity:1,
-                duration: 1,
-                ease: "power4.inOut",
-                y: "-10%"
-            },"<")
-
-            //header-nav
-            .to(".header-nav-pc",{
-                opacity:1,
-                duration: 1,
-            },"<")
-
+        // "kana takahashi"
+        kv.to(".js-kv-spn span",{
+            opacity: 1,
+            duration: 3,
+            stagger: 0.07,
+        })
+        
+        // "hi!~~"
+        .to(".js-kv-spn2 span",{
+            opacity:1,
+            duration: 3,
+            stagger: 0.03,
+        }, "<+=0.01")
+        
+        .to(".contact-confirmation span",{
+            opacity:1,
+            duration: 3,
+            stagger: 0.03,
+        }, "<+=0.01")
+        
+        // svg img
+        .to(".cir-sd",{
+            opacity:1,
+            duration: 1,
+            ease: "power4.inOut",
+            y: "-20%",
+        },"<+=2")
+        
+        // parapara img
+        .to(".parapara-top",{
+            opacity:1,
+            duration: 1,
+            ease: "power4.inOut",
+            y: "-10%"
+        },"<")
+        
+        //header-nav
+        .to(".header-nav-pc",{
+            opacity:1,
+            duration: 1,
+        },"<")
+        
     });
     // -----------------------------------
     // ＊＊＊＊＊＊
