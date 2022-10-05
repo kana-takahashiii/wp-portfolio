@@ -77,13 +77,16 @@ input[type="submit"]:hover {
 
 // 入力画面枠
 input[type="text"],input[type="email"],#message{
-    outline: none;
+    // outline: none;
     border: none;
     border-bottom: 1px solid #b4b4b4;
     cursor: pointer;
     background-color: var(--main-color);
 }
 
+// input:focus{
+//     outline:orange 2px solid;
+// }
 
 
 

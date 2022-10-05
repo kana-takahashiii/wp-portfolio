@@ -122,6 +122,9 @@ if(is_page('contact')) {
           </p>
         </div>
         <div class="parapara-jmp"></div>
+        <!-- ↓問い合わせ入力画面　アンダーライン
+        <div class="underline-center"></div> -->
+        <!-- ↓問い合わせ入力画面 -->
         <?php echo do_shortcode('[mwform_formkey key="56"]'); ?>
       </div>
       </div>
