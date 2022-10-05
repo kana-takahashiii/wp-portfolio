@@ -25,7 +25,10 @@
         padding-top: 80px;
     }
 }
-// 送信、確認ボタン
+
+// 
+// 送信ボタン、確認ボタン
+// 
 input[type="submit"]{
     margin-top: 40px;
     font-family: var(--font-family);
@@ -58,7 +61,7 @@ input[type="submit"]{
     // line-height: 2.8em;
     // width: 130px;
     // transition: 0.5s;
-    transition: all 0.4s ease-out;
+    // transition: all 0.4s ease-out;
 }
 
 .button_wrap::after{
@@ -77,14 +80,23 @@ input[type="submit"]{
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+// ＞が移動
 .button_wrap:hover::after{
     right: -80%;
 }
+// ホバー後グラデーション
 input[type="submit"]:hover {
+    transition: all 10s; /* アニメーション実行時間 */
     background: linear-gradient(135deg, #f6d365 0%,  #fda085 100%);
 }
 
+
+
+
+// 
 // 入力画面枠
+// 
 input[type="text"],input[type="email"],#message{
     outline: none;
     border: none;
@@ -92,7 +104,12 @@ input[type="text"],input[type="email"],#message{
     cursor: pointer;
     background-color: var(--main-color);
 }
+
+
+
+// 
 // 入力後背景色
+// 
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px var(--main-color) inset;
     }
@@ -105,8 +122,9 @@ input:-webkit-autofill {
 
 
 
-
+// 
 // 確認画面
+// 
 .mw_wp_form_confirm {
     width: 80vw;
     margin: 0 auto;
@@ -132,6 +150,15 @@ input:-webkit-autofill {
 
 
 
+
+
+
+
+
+
+// 
+// メディアクエリ
+// 
 @include mq(sp) {
     .contact-thanks {
         padding-top: 100px;
