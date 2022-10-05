@@ -230,11 +230,8 @@ body {
             }
             //プログレスバー背景色
             .swiper-pagination-progressbar {
-                // background-color: var(--main-color);
-                // background-color: #f3f3f3;
                 position: absolute;
                 height: 1.5px;
-                
             }
             //プログレスバー色
             .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
@@ -423,9 +420,11 @@ body {
             height: 200px;
             }
         }
-        #contact.section-wrap.parapara-jmp {
-            bottom: -80px;
-            left: -5vw;        
+        #contact.section-wrap{
+            .parapara-jmp {
+                bottom: -80px;
+                left: -5vw;        
+            }
         }
     }
 }
