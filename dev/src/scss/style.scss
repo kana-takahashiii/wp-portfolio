@@ -104,8 +104,9 @@ body {
 #works,#about,#contact,#confirm{
     opacity: 0;
     transition: opacity 0.5s linear;
+
         &.is-active {
-            opacity: 1000;
+            opacity: 1;
         }
 }
 

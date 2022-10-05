@@ -161,7 +161,7 @@ class SpanWrap {
   
       this.convert();
     }
-  
+
     convert() {
   
       let spanWrapText = ""
@@ -189,12 +189,12 @@ class SpanWrap {
         //   return element[0]
         // }
         return document.querySelector(element);
-      }
+    }
 }
 //実行処理
 const targets = [...document.querySelectorAll(".js-span,.js-kv-spn,.js-kv-spn2")]
 targets.forEach( (target) => {
-  new SpanWrap(target);
+    new SpanWrap(target);
 })
 
 
@@ -204,9 +204,10 @@ targets.forEach( (target) => {
 //ALL__条件分岐
 // -----------------------
 const home = document.querySelector(".shutter"); //TOP
+const form = document.querySelector(".contact-confirmation"); //formページ
 const about = document.querySelector(".about"); //ABOUTページ
 const works = document.querySelector(".works"); //WORKSページ
-if(home) {
+if((home) || (form)) {
     // スムーススクロール記述　↓↓
     let smoothHomeAnchor =()=> {
         const anchorLinks = document.querySelectorAll('a[href^="/#"]');
@@ -241,6 +242,7 @@ if(home) {
                     start: 'top center',
                     onEnter: () => item.classList.add('is-active'),
                     onLeaveBack: () => item.classList.remove('is-active'),
+                    markers: true
                 }
                 }
             );
@@ -254,6 +256,8 @@ if(home) {
                         // 各セクションタイトル
                         trigger:  titleFade,
                         start: 'top center',
+                        markers: true
+
                     }
                 });
         })
