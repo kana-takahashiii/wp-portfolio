@@ -22,6 +22,9 @@
         wp_enqueue_style('swiper-css', 'https://unpkg.com/swiper@7/swiper-bundle.min.css');
         wp_head();
         ?>
+        <!-- ファビコン -->
+        <link rel="shortcut icon" href="/favicon(32).ico" type="image/vnd.microsoft.icon">
+        <link rel="icon" href="/favicon(32).ico" type="image/vnd.microsoft.icon">
     </head>
 
     <body <?php body_class(); ?>>

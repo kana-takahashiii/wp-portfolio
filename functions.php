@@ -18,3 +18,10 @@ add_theme_support('post-thumbnails');
 //     $html = preg_replace('/(width|height)="\d*"\s/', '', $html);
 //     return $html;
 // }
+
+
+
+/**
+ * カスタム機能を使用
+ */
+add_theme_support( 'menus' );
