@@ -207,8 +207,8 @@ const home = document.querySelector(".shutter"); //TOP
 const about = document.querySelector(".about"); //ABOUTページ
 const works = document.querySelector(".works"); //WORKSページ
 // const form = document.querySelector(".contact-confirmation"); //form
-if(home) {
-// if((home) || (form)) {
+// if(home) {
+if((home) || (form)) {
     // スムーススクロール記述　↓↓
     let smoothHomeAnchor =()=> {
         const anchorLinks = document.querySelectorAll('a[href^="/#"]');

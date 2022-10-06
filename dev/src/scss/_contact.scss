@@ -36,158 +36,106 @@
         }
 
             .form_content {
+                margin-top: 10px;
                 border-bottom: 1px solid #b4b4b4;
                 width: 30vw;
             }
-        
-    }
-}
-// 
-// 問い合わせ内容〜ボタン
-// 
-.form {
-    // .form_row { // 名前、TEL、mail、内容
-    //     padding-top: 40px;
-    //     .span-red {
-    //         color: red;
-    //     }
-    //     input[type="email"]{
-    //         width: 50%;
-    //     }
-    //     .resize50 {
-    //         input[type="text"] {
-    //         width: 50%;
-    //         }
-    //     }
-    //     .form_row_center {
-    //         padding-top: 80px;
-    //     }
-    // }
-
-    // 
-    // 送信ボタン、確認ボタン
-    // 
-    input[type="submit"]{
-        margin-top: 40px;
-        font-family: var(--font-family);
-        font-weight: 700;
-        padding: 0 60px;
-        display: block;
-        border-radius: 100px;
-        border: none;
-        outline: 0;
-        cursor: pointer;
-        color:var(--main-color);
-        background-color: var(--btn-color);
-        line-height: 3.0em;
-        // padding: 0 2.5em 0 0.8em;
-        transition: 0.3s;
-        width: 26.5rem;
-        height: 7.2rem;
-        line-height: 1.5;
-        letter-spacing: .05em;
-    }
-
-    // 確認ボタンOnly　位置
-    .btn-send {
-        // margin: 0 auto;
-    }
-
-    .button_wrap{
-        color: var(--btn-color);
-        position: relative;
-    }
-
-    .button_wrap::after{
-        transition: 0.3s;
-        content: "";
-        width: .6em;
-        height: .6em;
-        border-top: 2px solid var(--main-color);
-        border-right: 2px solid var(--main-color);
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: -50%;
-        margin: auto;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-
-    // ＞が移動
-    .button_wrap:hover::after{
-        right: -80%;
-    }
-    // ホバー後グラデーション
-    input[type="submit"]:hover {
-        transition: all 10s; /* アニメーション実行時間 */
-        background: linear-gradient(135deg, #f6d365 0%,  #fda085 100%);
-    }
-
-
-
-
-    // 
-    // 入力画面枠
-    // 
-    input[type="text"],input[type="email"],#message{
-        outline: none;
-        border: none;
-        // border-bottom: 1px solid #b4b4b4;
-        cursor: pointer;
-        background-color: var(--main-color);
-        // margin-top: 10px;
-    }
-
-    input[type="text"],input[type="email"],#message {
-
-    }
-
-    textarea {
-        resize: vertical; /* 縦方向のリサイズを許可 */
-        max-height: 500px; /* 高さの最大値 */
-        min-height: 100px; /* 高さの最小値 */
-        width: 100%;
-    }
-
-
-
-    // 
-    // 入力後背景色
-    // 
-    input:-webkit-autofill {
-        -webkit-box-shadow: 0 0 0 1000px var(--main-color) inset;
-        }
-
-
-    // 
-    // 確認画面
-    // 
-    .mw_wp_form_confirm {
-        width: 80vw;
-        margin: 0 auto;
-        display: flex;
-        justify-content: flex-start;
-
-        .form {
-            .form_row {
-                margin-top: 20px;
-                // name
+            //　送信ボタン、確認ボタン
+            input[type="submit"] {
+                margin-top: 40px;
+                font-family: var(--font-family);
+                font-weight: 700;
+                padding: 0 60px;
+                display: block;
+                border-radius: 100px;
+                border: none;
+                outline: 0;
+                cursor: pointer;
+                color:var(--main-color);
+                background-color: var(--btn-color);
+                line-height: 3.0em;
+                // padding: 0 2.5em 0 0.8em;
+                transition: 0.3s;
+                width: 26.5rem;
+                height: 7.2rem;
+                line-height: 1.5;
+                letter-spacing: .05em;
             }
-        }
-        .form_content {
-            // 入力内容の部分
-            margin-top: 10px;
-        }
 
-        .form_row .form_row_center {
-            // btn
-            margin-top: 40px;
-        }
+            //　ボタンカラー
+            .button_wrap{
+                color: var(--btn-color);
+                position: relative;
+            }
+            // ボタン　擬似要素
+            .button_wrap::after{
+                transition: 0.3s;
+                content: "";
+                width: .6em;
+                height: .6em;
+                border-top: 2px solid var(--main-color);
+                border-right: 2px solid var(--main-color);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: -50%;
+                margin: auto;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            // ＞が移動
+            .button_wrap:hover::after{
+                right: -80%;
+            }
+            // ホバー後グラデーション
+            input[type="submit"]:hover {
+                transition: all 10s; /* アニメーション実行時間 */
+                background: linear-gradient(135deg, #f6d365 0%,  #fda085 100%);
+            }
+
+            input[type="text"],input[type="email"],#message{
+                outline: none;
+                border: none;
+                cursor: pointer;
+                background-color: var(--main-color);
+            }
+
+            // メッセージエリアサイズ制御
+            textarea {
+                resize: vertical; /* 縦方向のリサイズを許可 */
+                max-height: 500px; /* 高さの最大値 */
+                min-height: 100px; /* 高さの最小値 */
+                width: 100%;
+            }
+
+            // 入力後背景色
+            input:-webkit-autofill {
+                -webkit-box-shadow: 0 0 0 1000px var(--main-color) inset;
+                }
+
+            // 確認画面
+            .mw_wp_form_confirm {
+                width: 80vw;
+                margin: 0 auto;
+                display: flex;
+                justify-content: flex-start;
+
+                .form {
+                    .form_row {
+                        margin-top: 20px;
+                    }
+                }
+                .form_content {
+                    margin-top: 10px;
+                }
+
+                .form_row .form_row_center {
+                    margin-top: 40px;
+                }
+            }
     }
 }
-
 
 
 
@@ -203,15 +151,11 @@
 
 
 
-
-
-
-
 // 
 // メディアクエリ
 // 
 @include mq(sp) {
-    .contact-thanks {
+    .contact-thanks,.contact-confirmation  {
         padding-top: 100px;
         width: 90vw;
     }
