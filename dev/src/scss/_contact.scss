@@ -1,50 +1,68 @@
 //
-// 全体幅
+// 確認画面、問い合わせ完了画面
 // 
 .contact-thanks,.contact-confirmation {
     padding-top: 200px;
     text-align: left;
     width: 80vw;
     margin: 0 auto;
-    p {
-        // margin-bottom: 40px;
-    }
     .js-span {
         margin-bottom: 80px;
     }
 }
+
+
+// 
+// 入力画面
+// 
 #mw_wp_form_mw-wp-form-56 {
     .form {
         .form_row {
+            padding-top: 40px;
+            .span-red {
+                color: red;
+            }
+            input[type="email"]{
+                width: 50%;
+            }
+            .resize50 {
+                input[type="text"] {
+                width: 50%;
+                }
+            }
+            .form_row_center {
+                padding-top: 80px;
+            }
+        }
+
             .form_content {
                 border-bottom: 1px solid #b4b4b4;
                 width: 30vw;
             }
-        }
+        
     }
 }
 // 
 // 問い合わせ内容〜ボタン
 // 
 .form {
-    // 名前、TEL、mail、内容
-    .form_row {
-        padding-top: 40px;
-        .span-red {
-            color: red;
-        }
-        input[type="email"]{
-            width: 50%;
-        }
-        .resize50 {
-            input[type="text"] {
-            width: 50%;
-            }
-        }
-    .form_row_center {
-        padding-top: 80px;
-    }
-    }
+    // .form_row { // 名前、TEL、mail、内容
+    //     padding-top: 40px;
+    //     .span-red {
+    //         color: red;
+    //     }
+    //     input[type="email"]{
+    //         width: 50%;
+    //     }
+    //     .resize50 {
+    //         input[type="text"] {
+    //         width: 50%;
+    //         }
+    //     }
+    //     .form_row_center {
+    //         padding-top: 80px;
+    //     }
+    // }
 
     // 
     // 送信ボタン、確認ボタン
