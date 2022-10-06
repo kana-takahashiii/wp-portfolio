@@ -17,8 +17,8 @@
         <meta property="og:site_name" content="KANA TAKAHASHI">
 
         <!-- ファビコン -->
-        <link rel="shortcut icon" href="https://www.kana-takahashi.com/img/favicon(1).ico" type="image/vnd.microsoft.icon">
-        <link rel="icon" href="https://www.kana-takahashi.com/img/favicon(1).ico" type="image/vnd.microsoft.icon">  
+        <link rel="shortcut icon" href="https://www.kana-takahashi.com/img/favicon(32).ico" type="image/vnd.microsoft.icon">
+        <link rel="icon" href="https://www.kana-takahashi.com/img/favicon(32).ico" type="image/vnd.microsoft.icon">  
         
 
         <!-- js,swipeerをWP用に読み込み-->
