@@ -113,7 +113,7 @@
     input[type="text"],input[type="email"],#message{
         outline: none;
         border: none;
-        border-bottom: 1px solid #b4b4b4;
+        // border-bottom: 1px solid #b4b4b4;
         cursor: pointer;
         background-color: var(--main-color);
         margin-top: 10px;
@@ -154,6 +154,8 @@
         .form_content {
             // 入力内容の部分
             margin-top: 10px;
+            border-bottom: 1px solid red;
+            width: 50%;
         }
 
         .form_row .form_row_center {
