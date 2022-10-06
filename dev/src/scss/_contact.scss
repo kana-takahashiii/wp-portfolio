@@ -18,7 +18,7 @@
         .form_row {
             .form_content {
                 border-bottom: 1px solid #b4b4b4;
-                width: 30%;
+                width: 30vw;
             }
         }
     }
@@ -30,8 +30,6 @@
     // 名前、TEL、mail、内容
     .form_row {
         padding-top: 40px;
-        // // 入力確認画面の内容下線
-        // border-bottom: 1px solid #b4b4b4;
         .span-red {
             color: red;
         }
@@ -130,6 +128,13 @@
 
     input[type="text"],input[type="email"],#message {
 
+    }
+
+    textarea {
+        resize: vertical; /* 縦方向のリサイズを許可 */
+        max-height: 500px; /* 高さの最大値 */
+        min-height: 100px; /* 高さの最小値 */
+        width: 100%;
     }
 
 
