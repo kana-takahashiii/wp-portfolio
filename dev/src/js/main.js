@@ -192,7 +192,7 @@ class SpanWrap {
     }
 }
 //実行処理
-const targets = [...document.querySelectorAll(".js-span,.js-kv-spn,.js-kv-spn2")]
+const targets = [...document.querySelectorAll(".js-span,.js-kv-spn,.js-kv-spn2,.js-span-form")]
 targets.forEach( (target) => {
     new SpanWrap(target);
 })
@@ -206,9 +206,10 @@ targets.forEach( (target) => {
 const home = document.querySelector(".shutter"); //TOP
 const about = document.querySelector(".about"); //ABOUTページ
 const works = document.querySelector(".works"); //WORKSページ
+const form = document.querySelector("#confirm"); //form
 // const form = document.querySelector(".contact-confirmation"); //form
-// if(home) {
-if((home) || (form)) {
+if(home) {
+// if((home) || (form)) {
     // スムーススクロール記述　↓↓
     let smoothHomeAnchor =()=> {
         const anchorLinks = document.querySelectorAll('a[href^="/#"]');
@@ -258,7 +259,6 @@ if((home) || (form)) {
                         trigger:  titleFade,
                         start: 'top center',
                         markers: true
-
                     }
                 });
         })
@@ -384,64 +384,17 @@ if((home) || (form)) {
         })
         //img×スクロール×ふわっと現れる記述　↑↑
 
+    //ContactFORM
+    } else if(form) {
+        gsap.from(".js-span-form span",{
+            opacity: 0,
+            duration: 2,
+            stagger: 0.07,
+        }) 
 };
 // -----------------------------------
 // ＊＊＊＊＊＊
 // -----------------------------------
 
 
-
-// if文へ移行
-// -----------------------------------
-//　kvのアニメーション　　gsap span anime
-// -----------------------------------
-// gsap.set(".parapara-top",{opacity: 0,});
-// gsap.set(".js-kv-spn span",{opacity: 0,});
-// gsap.set(".js-kv-spn2 span", {opacity: 0,});
-// gsap.set(".cir-sd",{opacity: 0,});
-// gsap.set(".top .header-nav-pc", {opacity: 0,});
-
-// const targetEl = document.querySelector('.content');
-//     targetEl.addEventListener('animationend',() => {
-//     var kv = gsap.timeline();
-//         // "kana takahashi"
-//         kv.to(".js-kv-spn span",{
-//             opacity: 1,
-//             duration: 3,
-//             stagger: 0.07,
-//         })
-
-//         // "hi!~~"
-//         .to(".js-kv-spn2 span",{
-//             opacity:1,
-//             duration: 3,
-//             stagger: 0.03,
-//         }, "<+=0.01")
-
-//         // svg img
-//         .to(".cir-sd",{
-//             opacity:1,
-//             duration: 1,
-//             ease: "power4.inOut",
-//             y: "-20%",
-//         },"<+=2")
-
-//         // parapara img
-//         .to(".parapara-top",{
-//             opacity:1,
-//             duration: 1,
-//             ease: "power4.inOut",
-//             y: "-10%"
-//         },"<")
-
-//         //header-nav
-//         .to(".top .header-nav-pc",{
-//             opacity:1,
-//             duration: 1,
-//         },"<+=2")
-
-// });
-// -----------------------------------
-// ＊＊＊＊＊＊
-// -----------------------------------
 

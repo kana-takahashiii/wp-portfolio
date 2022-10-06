@@ -4,7 +4,7 @@
 
 <div class="contact-confirmation">
     <div class="section-wrap js-trigger" id="confirm">
-        <h2 class="js-span">CONFIRM</h2>
+        <h2 class="js-span-form">CONFIRM</h2>
     </div>
     <?php the_content(); ?>
 </div>
@@ -24,3 +24,7 @@
 
 
 <?php get_footer(); ?>
+
+
+
+
