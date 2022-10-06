@@ -49,29 +49,98 @@
                 border-bottom: 1px solid #b4b4b4;
                 width: 30vw;
             }
-            //　送信ボタン、確認ボタン
-            input[type="submit"] {
-                background-color: var(--btn-color);
-                border-radius: 100px;
-                margin-top: 40px;
-                width: 26.5rem;
-                height: 7.2rem;
 
-                font-family: var(--font-family);
-                font-weight: 700;
 
-                padding: 0 60px;
-                display: block;
-                border: none;
-                outline: 0;
-                cursor: pointer;
-                color:var(--main-color);
-                line-height: 3.0em;
-                // padding: 0 2.5em 0 0.8em;
-                transition: all 6s;
-                line-height: 1.5;
-                letter-spacing: .05em;
+
+
+
+
+            // 
+            // 
+            // 
+            // ボタンテスト
+            // 
+            // 
+            // 
+        .form {
+            .form_row_center {
+                .button_wrap {
+                    background-color: var(--btn-color);
+                    border-radius: 100px;
+                    text-align: center;
+                    margin: 0 auto;
+                    width: $width;
+                    height:$height;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    position: relative;
+                    // hover時アニメーション設定
+                    // transition: all 0.4s ease-out;
+                    z-index: 0;
+                    overflow: hidden;
+                
+                    &:before,
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+            
+                    /* defaultColor　ボタン */
+                    &:before {
+                        transition: all 0.6s; /* アニメーション実行時間 */
+                        z-index: -1;
+                        background-color: var(--btn-color);
+                    }
+            
+                    /* グラデーションに変化 */
+                    &:after {
+                        z-index: -2;
+                        background: linear-gradient(135deg, #f6d365 0%,  #fda085 100%);
+                    }
+            
+                    /* ホバー時にdefaultColoを透明にする */
+                    &:hover:before {
+                        opacity: 0;
+                    }
+            
+                }
             }
+        }
+
+
+
+
+
+            // //　送信ボタン、確認ボタン
+            // input[type="submit"] {
+            //     background-color: var(--btn-color);
+            //     border-radius: 100px;
+            //     margin-top: 40px;
+            //     width: 26.5rem;
+            //     height: 7.2rem;
+
+            //     font-family: var(--font-family);
+            //     font-weight: 700;
+
+            //     padding: 0 60px;
+            //     display: block;
+            //     border: none;
+            //     outline: 0;
+            //     cursor: pointer;
+            //     color:var(--main-color);
+            //     line-height: 3.0em;
+            //     // padding: 0 2.5em 0 0.8em;
+            //     transition: all 6s;
+            //     line-height: 1.5;
+            //     letter-spacing: .05em;
+            // }
 
 
             //　ボタンカラー
@@ -112,24 +181,56 @@
                 background: linear-gradient(135deg, #f6d365 0%,  #fda085 100%);
             }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             input[type="text"],input[type="email"],#message{
                 outline: none;
                 border: none;
                 cursor: pointer;
                 background-color: var(--main-color);
             }
-
-
-
-
-
-
-
-
-
-
-
-
 
             // メッセージエリアサイズ制御
             textarea {

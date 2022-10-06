@@ -20,8 +20,3 @@ add_theme_support('post-thumbnails');
 // }
 
 
-
-/**
- * カスタム機能を使用
- */
-add_theme_support( 'menus' );
