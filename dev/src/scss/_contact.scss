@@ -62,7 +62,7 @@
         color:var(--main-color);
         background-color: var(--btn-color);
         line-height: 3.0em;
-        padding: 0 2.5em 0 0.8em;
+        // padding: 0 2.5em 0 0.8em;
         transition: 0.3s;
         width: 26.5rem;
         height: 7.2rem;
@@ -78,10 +78,6 @@
     .button_wrap{
         color: var(--btn-color);
         position: relative;
-        // line-height: 2.8em;
-        // width: 130px;
-        // transition: 0.5s;
-        // transition: all 0.4s ease-out;
     }
 
     .button_wrap::after{
@@ -145,13 +141,6 @@
     input:-webkit-autofill {
         -webkit-box-shadow: 0 0 0 1000px var(--main-color) inset;
         }
-
-
-    // input:focus{
-    //     outline:orange 2px solid;
-    // }
-
-
 
 
     // 
