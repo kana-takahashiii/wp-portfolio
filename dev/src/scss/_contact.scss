@@ -93,13 +93,13 @@
                 -ms-transform: rotate(45deg);
                 transform: rotate(45deg);
             }
-            // ＞が移動
-            .button_wrap:hover::after{
-                right: -80%;
-            }
+            // // ＞が移動
+            // .button_wrap:hover::after{
+            //     // right: -80%;
+            // }
             // ホバー後グラデーション
             input[type="submit"]:hover {
-                transition: all 10s; /* アニメーション実行時間 */
+                transition: all 0.6s; /* アニメーション実行時間 */
                 background: linear-gradient(135deg, #f6d365 0%,  #fda085 100%);
             }
 
