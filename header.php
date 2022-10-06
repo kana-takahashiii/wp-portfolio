@@ -16,15 +16,17 @@
         <meta property="og:image" content="https://www.kana-takahashi.com/img/OGP-img.png">
         <meta property="og:site_name" content="KANA TAKAHASHI">
 
+        <!-- ファビコン -->
+        <link rel="shortcut icon" href="https://www.kana-takahashi.com/img/favicon(1).ico" type="image/vnd.microsoft.icon">
+        <link rel="icon" href="https://www.kana-takahashi.com/img/favicon(1).ico" type="image/vnd.microsoft.icon">  
+        
+
         <!-- js,swipeerをWP用に読み込み-->
         <?php
         wp_enqueue_script('swiper-js', 'https://unpkg.com/swiper@8/swiper-bundle.min.js');
         wp_enqueue_style('swiper-css', 'https://unpkg.com/swiper@7/swiper-bundle.min.css');
         wp_head();
         ?>
-        <!-- ファビコン -->
-        <link rel="shortcut icon" href="/favicon(32).ico" type="image/vnd.microsoft.icon">
-        <link rel="icon" href="/favicon(32).ico" type="image/vnd.microsoft.icon">
     </head>
 
     <body <?php body_class(); ?>>
