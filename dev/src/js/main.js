@@ -105,8 +105,8 @@ function customCursor() {
         var cur = document.querySelector(".cursor");
         // querySelectorAll("a")　aタグすべて
         var links = document.querySelectorAll("a");
-        // querySelectorAll("img")　※top>about>swiperのみ
-        // var links = document.querySelectorAll(".swiper-slide img");
+        // input submitボタン
+        var push = document.querySelectorAll('input[type="submit"]');
 
 
         // カーソルの最初の位置指定
@@ -132,6 +132,18 @@ function customCursor() {
                 follow.classList.remove("is-active");
             });
         });
+        // input submit カーソルが大きくなる、
+        push.forEach(link => {
+            link.addEventListener( "mouseenter", () => {
+                cur.classList.add("is-active");
+                follow.classList.add("is-active");
+            });
+            link.addEventListener( "mouseleave", () => {
+                cur.classList.remove("is-active");
+                follow.classList.remove("is-active");
+            });
+        });
+
     }
 }
 // カスタムカーソルのjsを実行。
