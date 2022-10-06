@@ -14,7 +14,7 @@
     cursor: pointer;
     position: relative;
     // hover時アニメーション設定
-    transition: all 0.4s ease-out;
+    // transition: all 0.4s ease-out;
     z-index: 0;
     overflow: hidden;
         a {
@@ -37,22 +37,20 @@
             height: 100%;
         }
 
-        /* グラデーション1 */
+        /* defaultColor　ボタン */
         &:before {
             transition: all 0.6s; /* アニメーション実行時間 */
             z-index: -1;
             background-color: var(--btn-color);
         }
 
-        /* グラデーション2 */
+        /* グラデーションに変化 */
         &:after {
             z-index: -2;
             background: linear-gradient(135deg, #f6d365 0%,  #fda085 100%);
         }
 
-        
-
-        /* ホバー時にグラデーション1を透明にする */
+        /* ホバー時にdefaultColoを透明にする */
         &:hover:before {
             opacity: 0;
         }
