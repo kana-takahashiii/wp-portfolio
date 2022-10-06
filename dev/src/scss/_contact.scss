@@ -68,7 +68,7 @@
                 color:var(--main-color);
                 line-height: 3.0em;
                 // padding: 0 2.5em 0 0.8em;
-                transition: 0.3s;
+                transition: all 6s;
                 line-height: 1.5;
                 letter-spacing: .05em;
             }
@@ -85,7 +85,7 @@
 
             // ボタン　擬似要素
             .button_wrap::after{
-                transition: 5s;
+                // transition: 5s;
                 // transition: 0.3s;
                 // border-top: 2px solid var(--main-color);
                 // border-right: 2px solid var(--main-color);

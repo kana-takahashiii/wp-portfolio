@@ -17,9 +17,7 @@
         <meta property="og:site_name" content="KANA TAKAHASHI">
 
         <!-- ファビコン -->
-        <!-- <link rel="shortcut icon" href="https://www.kana-takahashi.com/img/favicon(32).ico" type="image/vnd.microsoft.icon">
-        <link rel="icon" href="https://www.kana-takahashi.com/img/favicon(32).ico" type="image/vnd.microsoft.icon">   -->
-        <link rel="shortcut icon" href="./img/favicon.ico">
+        <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>./img/favicon.ico">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="/android-chrome-192x192.png">
                 
