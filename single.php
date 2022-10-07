@@ -35,9 +35,23 @@
       </div>
 
       <div class="mock-img-wrap">
-        <img class="js-demo-img" src="../img/worksimg/gm-mock-1.png" alt="">
-        <img class="js-demo-img" src="../img/worksimg/gm-mock-2.png" alt="">
-        <img class="js-demo-img" src="../img/worksimg/gm-mock-3.png" alt="">
+        <?php 
+        $image = get_field('thumbnail1');
+        if( !empty( $image ) ): ?>
+            <img class="js-demo-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <?php endif; ?>
+
+        <?php 
+        $image = get_field('thumbnail2');
+        if( !empty( $image ) ): ?>
+            <img class="js-demo-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <?php endif; ?>
+
+        <?php 
+        $image = get_field('thumbnail3');
+        if( !empty( $image ) ): ?>
+            <img class="js-demo-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <?php endif; ?>
       </div>
 
       <div class="btn">
