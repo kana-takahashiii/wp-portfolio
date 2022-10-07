@@ -118,7 +118,7 @@ if(is_page('contact')) {
         <h2 class="js-span">CONTACT</h2>
         <div class="last-mg">
           <p>
-            <If>you are interested, please contact me!</If>
+            If you are interested, please contact me!
           </p>
         </div>
 
