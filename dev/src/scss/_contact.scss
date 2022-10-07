@@ -147,12 +147,31 @@
 
 
 
+
 // backボタン位置　左寄せ
-.footer-inner {
-    margin: 0;
-    .btn-left {
-        margin-left: 10vw;
-        margin-top: 100px;
+.page-template-default.page-id-74 {
+    .footer-inner {
+        margin: 0;
+        .btn.btn-left {
+            margin-left: 10vw;
+            margin-top: 100px;
+        }
+        .btn {
+            @include btn(26.5rem, 7.2rem);
+            margin: 0 auto;
+            a {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+            }
+            .btn-text {
+                padding: 0 60px;
+            }
+            svg {
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+            }
+        }
     }
 }
 

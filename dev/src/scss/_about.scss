@@ -71,24 +71,25 @@
 }
 // .about code-end
 
-
-.footer-inner {
-    width: var(--width);
-    margin: 0 auto;
-    .btn {
-        @include btn(26.5rem, 7.2rem);
+.page-template-default.page-id-42 {
+    .footer-inner {
+        width: var(--width);
         margin: 0 auto;
-        a {
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-        }
-        .btn-text {
-            padding: 0 60px;
-        }
-        svg {
-            transform: rotate(180deg);
-            -webkit-transform: rotate(180deg);
+        .btn {
+            @include btn(26.5rem, 7.2rem);
+            margin: 0 auto;
+            a {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+            }
+            .btn-text {
+                padding: 0 60px;
+            }
+            svg {
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+            }
         }
     }
 }

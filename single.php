@@ -11,8 +11,6 @@
       </div>
 
       <div class="mock-wrap">
-        <!-- <img class="js-demo" src="../img/worksimg/gm-mock.png" alt=""> -->
-
         <?php 
         $image = get_field('img');
         if( !empty( $image ) ): ?>
