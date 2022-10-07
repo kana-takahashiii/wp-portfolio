@@ -1,6 +1,5 @@
     <footer>
         <p>&copy; 2022 KANA TAKAHASHI</p>
-        <div class="parapara-jmp"></div>
     </footer>
 
 
