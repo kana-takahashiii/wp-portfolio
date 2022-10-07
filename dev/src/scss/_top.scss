@@ -364,28 +364,6 @@ body {
             background-size: cover;
         }
         
-        .form {
-            margin-top: 40px;
-            a {
-            font-size: clamp(2rem,7vw,8rem);
-            color: var(--font-color);
-            text-decoration: none;
-            // アドレスのアンダーバーの指定↓
-            position: relative;
-                // 疑似要素
-                &::after {
-                    content: "";
-                    border: 1px solid var(--font-color);
-                    background-color: var(--font-color);
-                    color: #fff;
-                    padding: 1px;
-                    width: 100%;
-                    display: block;
-                    position: absolute;
-                    bottom: 0;
-                }
-            }
-        }
 
     }
 
