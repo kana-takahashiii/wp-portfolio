@@ -121,11 +121,14 @@ if(is_page('contact')) {
             <If>you are interested, please contact me!</If>
           </p>
         </div>
+
         <div class="parapara-jmp"></div>
+        
         <!-- ↓問い合わせ入力画面 -->
         <?php echo do_shortcode('[mwform_formkey key="56"]'); ?>
       </div>
-      </div>
+
+    <!-- </div> -->
     </main>
 
 
