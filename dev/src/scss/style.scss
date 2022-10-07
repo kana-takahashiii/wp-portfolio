@@ -110,6 +110,16 @@ body {
         }
 }
 
+// 404error
+.container-404 {
+    h2 {
+    font-size: var(--font-13-16);
+    }
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
 
 
 // -----SP-----
@@ -124,6 +134,11 @@ body {
         .about {
             width: var(--media-sp-width) ;
         }
+        .container-404 {
+            width: 90vw;
+        }
+        
+        
     }
 }
 // code-end

@@ -1,12 +1,10 @@
 <?php get_header(); ?>
 
-<h2 class="page-title">404 NOT FOUND<span>ERROR</span></h2>
 
-<div class="main">
-    <div class="container">
+    <div class="container-404">
+        <h2 class="error">404 NOT FOUND ERROR</h2>
         <p>お探しのページが見つかりませんでした。</p>
         <p>申し訳ございませんが、<a href="<?php echo home_url('/'); ?>">こちらのリンク</a>からトップページにお戻りください。</p>
     </div>
-</div>
 
 <?php get_footer(); ?>
