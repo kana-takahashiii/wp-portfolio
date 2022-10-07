@@ -356,9 +356,9 @@ body {
             aspect-ratio: 12 / 7;
             width: 91px;
             height: 160px;
-            // bottom: 0;
-            bottom: 10%;
-            left: -10vw;
+            bottom: -160px;
+            // bottom: 10%;
+            // left: -10vw;
             background: url(./img/sample.png) no-repeat;
             animation: parapara-jmp 3.0s steps(3) infinite;
             background-size: cover;
@@ -421,7 +421,8 @@ body {
         }
         #contact.section-wrap{
             .parapara-jmp {
-                bottom: -80px;
+                bottom: -160px;
+                // bottom: -80px;
                 left: -5vw;        
             }
         }
@@ -516,9 +517,8 @@ body {
         .parapara-jmp {
             width: 45px;
             height: 80px;
-            // bottom: -20%;
-            // left: -5vw;
-            bottom: 0;
+            bottom: -80px;
+            // bottom: 0;
             left: 0vw;
         }
     }
