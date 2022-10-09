@@ -72,7 +72,7 @@ body {
     } 
 
     .about {
-        width: 80vw;
+        width: var(--width);
         margin: 0 auto;
     }
 
@@ -84,7 +84,7 @@ body {
 
     h3 {
         //--h3___WORKS-site-title GM
-        width: 80vw;
+        width: var(--width);
         margin:  0 auto;
         font-size: clamp( 4rem, 7vw, 10rem);
         font-weight: 700;
@@ -115,7 +115,7 @@ body {
     h2 {
     font-size: var(--font-13-16);
     }
-    width: 80vw;
+    width: var(--width);
     margin: 0 auto;
     padding-top: 200px;
 }
@@ -135,7 +135,7 @@ body {
             width: var(--media-sp-width) ;
         }
         .container-404 {
-            width: 90vw;
+            width: var(--media-sp-width) ;
         }
         
         
