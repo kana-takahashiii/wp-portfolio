@@ -150,7 +150,7 @@
 
 
 // backボタン位置　左寄せ
-.page-template-default.page-id-74 {
+.page-template-default.page-id-74,.page-template-default.page-id-54 {
     .footer-inner {
         margin: 0;
         .btn.btn-left {
@@ -193,6 +193,15 @@
             .form_content {
                 width: 100%; 
             }  
+        }
+    }
+    .page-template-default.page-id-54 {
+        .footer-inner {
+            margin: 0 auto;
+            .btn.btn-left {
+                margin-left: auto;
+            }
+    
         }
     }
 }
