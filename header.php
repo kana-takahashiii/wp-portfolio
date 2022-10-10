@@ -15,7 +15,16 @@
         <meta property="og:url" content="https://www.kana-takahashi.com/">
         <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/OGP-img.png">
         <meta property="og:site_name" content="KANA TAKAHASHI">
+        
+        <!-- OG画像　Twitter -->
+        <meta name=”twitter:card” content=”Summary Card” />
+        <meta name=”twitter:site” content=”@891011891011_” />
+        <meta name=”twitter:domain” content=”ドメイン名” />
+        <!-- <meta name=”twitter:title” content=”Webページのタイトル” /> -->
+        <!-- <meta name=”twitter:description” content=”Webページの説明（ディスクリプション）” /> -->
+        <!-- <meta name=”twitter:image” content=”アイキャッチ画像のパス（URL）” /> -->
 
+        
         <!-- ファビコン -->
         <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
