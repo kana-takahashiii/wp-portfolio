@@ -17,9 +17,9 @@
         <meta property="og:site_name" content="KANA TAKAHASHI">
         
         <!-- OG画像　Twitter -->
-        <meta name=”twitter:card” content="summary_large_image” />
-        <meta name=”twitter:site” content=”@891011891011_” />
-        <meta name=”twitter:domain” content=”ドメイン名” />
+        <meta name=”twitter:card” content="summary_large_image" />
+        <meta name=”twitter:site” content=”@891011891011_” /> 
+        <!-- <meta name=”twitter:domain” content=”ドメイン名” /> -->
         <!-- <meta name=”twitter:title” content=”Webページのタイトル” /> -->
         <!-- <meta name=”twitter:description” content=”Webページの説明（ディスクリプション）” /> -->
         <!-- <meta name=”twitter:image” content=”アイキャッチ画像のパス（URL）” /> -->
