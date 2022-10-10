@@ -13,7 +13,7 @@
         <meta property="og:description" content="髙橋果奈のポートフォリオサイトです。">
         <meta property=”og:type” content=”website” />
         <meta property="og:url" content="https://www.kana-takahashi.com/">
-        <meta property="og:image" content="https://www.kana-takahashi.com/img/OGP-img.png">
+        <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/OGP-img.png">
         <meta property="og:site_name" content="KANA TAKAHASHI">
 
         <!-- ファビコン -->
