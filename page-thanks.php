@@ -8,7 +8,7 @@
 </div>
 
 
-<!-- 戻るボタン -->
+<!-- HOMEに戻るボタン -->
 <div class="footer-inner">
     <div class="btn btn-left">
         <a href="<?php echo esc_url( home_url('/') ); ?>"><span class="btn-text">HOME</span>
@@ -18,7 +18,6 @@
         </a>
     </div>
 </div>
-
 
 
 <?php get_footer(); ?>
