@@ -185,7 +185,7 @@
 @include mq(sp) {
     .contact-thanks,.contact-confirmation  {
         padding-top: 100px;
-        width: 90vw;
+        width: var(--media-sp-width);
     }
     #mw_wp_form_mw-wp-form-56 {
         .form {
