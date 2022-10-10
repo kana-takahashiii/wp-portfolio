@@ -8,13 +8,6 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/normalize.css">
         <!-- style.css -->
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-        <!-- OG画像 -->
-        <meta property="og:title" content="KANA TAKAHASHI Portfolio">
-        <meta property="og:description" content="髙橋果奈のポートフォリオサイトです。">
-        <meta property=”og:type” content=”website” />
-        <meta property="og:url" content="https://www.kana-takahashi.com/">
-        <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/OGP-img.png">
-        <meta property="og:site_name" content="KANA TAKAHASHI">
         
         <!-- OG画像　Twitter -->
         <meta name=”twitter:card” content="summary_large_image" />
@@ -23,6 +16,13 @@
         <!-- <meta name=”twitter:title” content=”Webページのタイトル” /> -->
         <!-- <meta name=”twitter:description” content=”Webページの説明（ディスクリプション）” /> -->
         <!-- <meta name=”twitter:image” content=”アイキャッチ画像のパス（URL）” /> -->
+        <!-- OG画像 -->
+        <meta property="og:title" content="KANA TAKAHASHI Portfolio">
+        <meta property="og:description" content="髙橋果奈のポートフォリオサイトです。">
+        <meta property=”og:type” content=”website” />
+        <meta property="og:url" content="https://www.kana-takahashi.com/">
+        <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/OGP-img.png">
+        <meta property="og:site_name" content="KANA TAKAHASHI">
 
         
         <!-- ファビコン -->
