@@ -77,7 +77,7 @@
 
                 /* defaultColor　ボタン */
                 &:before {
-                    transition: all 0.6s; /* アニメーション実行時間 */
+                    transition: all 0.6s;
                     background-color: var(--btn-color);
                     z-index: 5;
                 }
@@ -96,17 +96,13 @@
                 // //　送信ボタン、確認ボタン
                 input[type="submit"] {
                     z-index: 10;
-                    // background-color: var(--btn-color);
                     background-color: transparent;
                     border-radius: 100px;
-                    // margin-top: 40px;
                     width: 26.5rem;
                     height: 7.2rem;
                     border: none;
                     outline: 0;
                     cursor: pointer;
-                    
-                    // フォント関係　↓
                     font-family: var(--font-family);
                     font-weight: 700;
                     color:var(--main-color);
@@ -125,9 +121,9 @@
 
             // メッセージエリアサイズ制御
             textarea {
-                resize: vertical; /* 縦方向のリサイズを許可 */
-                max-height: 500px; /* 高さの最大値 */
-                min-height: 100px; /* 高さの最小値 */
+                resize: vertical; 
+                max-height: 500px; 
+                min-height: 100px; 
                 width: 100%;
             }
 
@@ -154,7 +150,6 @@
     .footer-inner {
         margin: 0;
         .btn.btn-left {
-            // margin-left: 5vw;
             margin-left: 10vw;
             margin-top: 100px;
         }
@@ -184,9 +179,6 @@
     .footer-inner {
         padding-top: 0;
     }
-    // .btn.btn-left {
-    //     margin-left: 10vw;
-    // }
 }
 
 @include mq(sp) {

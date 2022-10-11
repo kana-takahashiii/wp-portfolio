@@ -2,7 +2,6 @@
 // btn
 // ------------------------
 @mixin btn ($width,$height) {
-    // background-color: var(--btn-color);
     border-radius: 100px;
     text-align: center;
     margin: 0 auto;
@@ -13,8 +12,6 @@
     align-items: center;
     cursor: pointer;
     position: relative;
-    // hover時アニメーション設定
-    // transition: all 0.4s ease-out;
     z-index: 0;
     overflow: hidden;
 
@@ -40,7 +37,7 @@
 
         /* defaultColor　ボタン */
         &:before {
-            transition: all 0.6s; /* アニメーション実行時間 */
+            transition: all 0.6s; 
             z-index: -1;
             background-color: var(--btn-color);
         }
@@ -66,7 +63,6 @@
     width: 40px;
     height: 60px;
     top: auto;
-    // bottom: calc( (100% - 3.5vw) - 10vh);
 }
 
 

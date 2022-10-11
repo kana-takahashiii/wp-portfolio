@@ -5,7 +5,6 @@ body {
 .cursor,
 .follower {
     border-radius: 50%;
-    // position: absolute;
     position: fixed;
     top: 0;
     left: 0; 
@@ -177,7 +176,6 @@ body {
                     aspect-ratio: 387 / 512;
                     width: clamp(65px,10vw,140px);
                     position: absolute;
-                    // bottom: calc(97% - 10vh);
                     bottom: 90%;
                     height: auto;
                     background: url(./img/parapara.png) no-repeat;
@@ -343,7 +341,6 @@ body {
     // CONTACT
     // ---------------------
     #contact.section-wrap {
-        // parapa-jumpの位置決め
         position: relative;
 
         
@@ -357,8 +354,6 @@ body {
             width: 91px;
             height: 160px;
             bottom: -160px;
-            // bottom: 10%;
-            // left: -10vw;
             background: url(./img/sample.png) no-repeat;
             animation: parapara-jmp 3.0s steps(3) infinite;
             background-size: cover;
@@ -393,7 +388,6 @@ body {
         #contact.section-wrap{
             .parapara-jmp {
                 bottom: -160px;
-                // bottom: -80px;
                 left: -5vw;        
             }
         }

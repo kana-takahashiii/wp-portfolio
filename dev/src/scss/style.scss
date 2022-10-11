@@ -83,13 +83,11 @@ body {
     }
 
     h3 {
-        //--h3___WORKS-site-title GM
         width: var(--width);
         margin:  0 auto;
         font-size: clamp( 4rem, 7vw, 10rem);
         font-weight: 700;
         line-height: 1;
-        // padding-bottom: 160px;
     }
     .section-item {
         margin-top: 80px;

@@ -5,9 +5,8 @@
     --font-color: #653430;
     // 各セクションタイトル
     --h2: clamp(5rem, 15vw, 16rem);
-    --TAB-SP-h2: clamp(5rem, 16vw, 10rem);
     // ABOUT-WORKSレスポンシブタイトル
-    // --TAB-SP-h2:clamp(6rem,14vw,10rem);
+    --TAB-SP-h2: clamp(5rem, 16vw, 10rem);
     --main-color: #E5E5E5;
     --box-color:#653430;
     --btn-color:  #E27C39;
@@ -20,13 +19,6 @@
 
 
 
-
-
-// animetion #circle
-@keyframes rotate-anime {
-    0%  {transform: rotate(0);}
-    100%  {transform: rotate(360deg);}
-}
 
 
 

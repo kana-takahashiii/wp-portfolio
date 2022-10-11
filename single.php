@@ -1,13 +1,12 @@
 <?php get_header(); ?>
 
-<!-- works----------ジェラート詳細ページ -->
+<!-- works詳細ページ -->
   <?php if ( have_posts() ): ?>
     <?php while ( have_posts() ) : the_post(); ?>
 
     <main class="works">
       <div class="js-demo">
         <h3><?php the_title(); ?></h3>
-        <!-- <h3>DETAILS OF<br>Fruits Gelateria</h3> -->
       </div>
 
       <div class="mock-wrap">
