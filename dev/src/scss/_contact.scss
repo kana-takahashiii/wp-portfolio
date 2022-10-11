@@ -4,7 +4,7 @@
 .contact-thanks,.contact-confirmation {
     padding-top: 200px;
     text-align: left;
-    width: 80vw;
+    width: var(--width);
     margin: 0 auto;
 
     .section-wrap.js-trigger {
@@ -138,7 +138,7 @@
 
             // 確認画面
             .mw_wp_form_confirm {
-                width: 80vw;
+                width: var(--width);
                 margin: 0 auto;
                 display: flex;
                 justify-content: flex-start;
@@ -154,8 +154,8 @@
     .footer-inner {
         margin: 0;
         .btn.btn-left {
-            margin-left: 5vw;
-            // margin-left: 10vw;
+            // margin-left: 5vw;
+            margin-left: 10vw;
             margin-top: 100px;
         }
         .btn {
@@ -177,12 +177,26 @@
     }
 }
 
-
-
-
 // 
 // メディアクエリ
 // 
+@include mq(tab) {
+    .footer-inner {
+        padding-top: 0;
+    }
+    // .btn.btn-left {
+    //     margin-left: 10vw;
+    // }
+}
+
+
+
+
+
+
+
+
+
 @include mq(sp) {
     .contact-thanks,.contact-confirmation  {
         padding-top: 100px;
@@ -201,7 +215,13 @@
             .btn.btn-left {
                 margin-left: auto;
             }
-    
+        } 
+    }
+    .page-template-default.page-id-74 {
+        .footer-inner {
+            .btn.btn-left {
+                margin-left: 5vw;
+            }
         }
     }
 }
